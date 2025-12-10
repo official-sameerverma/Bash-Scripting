@@ -1,0 +1,22 @@
+#!/bin/bash
+
+string="Hello, World!   this is my World"
+echo ${string:7:5}
+
+
+#Replace one String
+
+# string="Hello, World!"
+# replaced_str=${string/World/Sameer}
+# echo $replaced_str
+
+
+# replace all string 
+echo $string |awk '{gsub(/World/, "Sameer"); print}'
+echo $string | sed 's/World/Guest/g'
+echo $string | sed 's/World/Guest/'
+
+# /s substitute string 
+#/g global replace all
+
+sed -i 's/sameer/Sameer/g' test.txt

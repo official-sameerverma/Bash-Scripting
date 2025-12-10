@@ -1,0 +1,4 @@
+git
+curl
+python3
+htop
